@@ -34,7 +34,7 @@ function App(){
             images.map(
               image => 
               <article key={image.id} onClick={() => open(image.links.html)}>
-                <img src={image.urls.regular} />
+                <img src={image.urls.regular} alt={image.alt_description} />
                 <p>{[image.description, image.alt_description].join(' - ')}</p>
               </article>
             )
