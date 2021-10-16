@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+}
+.center {
+    width: 100%;
+    max-width: 1170px;
+    column-count: 3;
+}
+
+@media (max-width: 1170px) {
+    .center {
+        column-count: 2;
+        max-width: 780px;
+    }
+}
+@media (max-width: 780px) {
+    .center {
+        column-count: 1;
+        max-width: 390px;
+    }
+}
